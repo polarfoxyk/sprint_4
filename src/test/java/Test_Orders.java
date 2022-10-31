@@ -1,4 +1,5 @@
-import Page_Object.First_page;
+import Page_Object.FirstPpage;
+import Page_Object.TwoPage;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -36,14 +37,15 @@ public class Test_Orders {
     public void testOrderHeader() {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.clickOrderHeader();
-        first_page.sendOneForm(name, surname, addres, phone);
-        first_page.clickButtonDalee();
-        first_page.sendTwoForm("02.11.2022", "тут будет комментарий");
-        first_page.clickButtonOrderPopap();
-        first_page.clickButtonYesPopap();
-        first_page.checkOrderComplete();
+        FirstPpage firstPage = new FirstPpage(driver);
+        firstPage.clickOrderHeader();
+        TwoPage twoPage = new TwoPage(driver);
+        twoPage.sendOneForm(name, surname, addres, phone);
+        twoPage.clickButtonDalee();
+        twoPage.sendTwoForm("02.11.2022", "тут будет комментарий");
+        twoPage.clickButtonOrderPopap();
+        twoPage.clickButtonYesPopap();
+        twoPage.checkOrderComplete();
 
         driver.quit();
 
@@ -53,14 +55,15 @@ public class Test_Orders {
     public void testOrderBody() {
         WebDriver driver = new FirefoxDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.clickOrderBody();
-        first_page.sendOneForm(name, surname, addres, phone);
-        first_page.clickButtonDalee();
-        first_page.sendTwoForm("02.11.2022", "тут будет комментарий");
-        first_page.clickButtonOrderPopap();
-        first_page.clickButtonYesPopap();
-        first_page.checkOrderComplete();
+        FirstPpage firstPage = new FirstPpage(driver);
+        firstPage.clickOrderBody();
+        TwoPage twoPage = new TwoPage(driver);
+        twoPage.sendOneForm(name, surname, addres, phone);
+        twoPage.clickButtonDalee();
+        twoPage.sendTwoForm("02.11.2022", "тут будет комментарий");
+        twoPage.clickButtonOrderPopap();
+        twoPage.clickButtonYesPopap();
+        twoPage.checkOrderComplete();
 
         driver.quit();
 

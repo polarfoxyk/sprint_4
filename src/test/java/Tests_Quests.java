@@ -1,5 +1,4 @@
-import Page_Object.First_page;
-import org.junit.After;
+import Page_Object.FirstPpage;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -11,8 +10,8 @@ public class Tests_Quests {
     public void questOneTest() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.checkQuestOne();
+        FirstPpage firstPpage = new FirstPpage(driver);
+        firstPpage.checkQuestOne();
 
         driver.quit();
 
@@ -22,8 +21,8 @@ public class Tests_Quests {
     public void questTwoTest() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.checkQuestTwo();
+        FirstPpage firstPpage = new FirstPpage(driver);
+        firstPpage.checkQuestTwo();
 
         driver.quit();
 
@@ -33,8 +32,8 @@ public class Tests_Quests {
     public void questTwoThree() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.checkQuestThree();
+        FirstPpage firstPage = new FirstPpage(driver);
+        firstPage.checkQuestThree();
 
         driver.quit();
 
@@ -44,8 +43,8 @@ public class Tests_Quests {
     public void questTwoFour() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.checkQuestFour();
+        FirstPpage firstPage = new FirstPpage(driver);
+        firstPage.checkQuestFour();
 
         driver.quit();
 
@@ -55,8 +54,8 @@ public class Tests_Quests {
     public void questTwoFive() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.checkQuestFive();
+        FirstPpage firstPage = new FirstPpage(driver);
+        firstPage.checkQuestFive();
 
         driver.quit();
 
@@ -66,8 +65,8 @@ public class Tests_Quests {
     public void questTwoSix() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.checkQuestSix();
+        FirstPpage firstPage = new FirstPpage(driver);
+        firstPage.checkQuestSix();
 
         driver.quit();
 
@@ -77,8 +76,8 @@ public class Tests_Quests {
     public void questTwoSeven() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.checkQuestSeven();
+        FirstPpage firstPage = new FirstPpage(driver);
+        firstPage.checkQuestSeven();
 
         driver.quit();
 
@@ -88,8 +87,8 @@ public class Tests_Quests {
     public void questTwoEight() {
         WebDriver driver = new ChromeDriver();
         driver.get("https://qa-scooter.praktikum-services.ru/");
-        First_page first_page = new First_page(driver);
-        first_page.checkQuestEight();
+        FirstPpage firstPage = new FirstPpage(driver);
+        firstPage.checkQuestEight();
 
         driver.quit();
 
